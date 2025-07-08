@@ -1,0 +1,7 @@
+streamlit
+python-dotenv
+mistralai
+camel-ai
+langgraph
+langchain
+git+https://github.com/lightaime/camel.git
