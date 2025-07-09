@@ -1,7 +1,5 @@
-streamlit
-python-dotenv
+streamlit==1.21.0
+camel-ai==0.2.2
+python-dotenv==1.0.0
 mistralai
-camel-ai
-langgraph
-langchain
 git+https://github.com/lightaime/camel.git

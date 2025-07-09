@@ -5,7 +5,7 @@ import streamlit as st
 from pipeline.learning_pipeline import run_learning_session
 
 # Streamlit App Config
-st.set_page_config(page_title="📚 Teaching Agent AI", layout="wide")
+st.set_page_config(page_title="📚 Multi-Agent Edu", layout="wide")
 
 # Custom Styling
 st.markdown("""
@@ -77,7 +77,7 @@ st.markdown("""
 col_main, col_guide = st.columns([2, 1])
 
 with col_main:
-    st.markdown("<h1 style='text-align: center;'>📚 Teaching Agent AI</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>📚 Multi-Agent Edu</h1>", unsafe_allow_html=True)
     topic = st.text_input("Enter a learning topic:", placeholder="e.g., Newton's Laws, Python Lists, Photosynthesis")
 
     if st.button("Start Learning Session"):
@@ -101,8 +101,7 @@ with col_guide:
     st.subheader("👨‍🎓 Student Agent")
     st.markdown("""
     - Asks questions based on the topic.
-    - Does **not answer the user directly**.
-    - Always seeks knowledge from the teacher.
+    - Always seeks knowledge from the teaching Agent.
     """)
 
     st.subheader("👨‍🏫 Teacher Agent")
@@ -119,5 +118,5 @@ with col_guide:
     """)
 
     st.markdown("---")
-    st.markdown("Together, these agents form a **closed loop** where knowledge is requested, taught, and tested — just like in real educational settings.")
+    st.markdown("Together, these agents form a **closed loop** where knowledge is requested, taught, and tested just like in real educational settings.")
 
